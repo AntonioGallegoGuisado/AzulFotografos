@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Gema active admin y dependencias
+# Gema active admin y dependencias (seccion de administracion)
 
 gem 'activeadmin',      github: 'gregbell/active_admin'             # ActiveAdmin backend framework for Rails administration interface
 gem 'polyamorous',      github: 'activerecord-hackery/polyamorous'  # Require for ActiveAdmin to work with Rails 4.1
@@ -12,6 +12,9 @@ gem 'active_admin_importable'
 
 # Gema bootstrap (responsive)
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+
+# Gema Paperclip (subir y tratar imagenes)
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
