@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-#Gema active admin y dependencias
+# Gema active admin y dependencias
 
 gem 'activeadmin',      github: 'gregbell/active_admin'             # ActiveAdmin backend framework for Rails administration interface
 gem 'polyamorous',      github: 'activerecord-hackery/polyamorous'  # Require for ActiveAdmin to work with Rails 4.1
@@ -9,6 +9,9 @@ gem 'formtastic',       github: 'justinfrench/formtastic'           # Require fo
 gem 'devise'                                                 # Authentication
 
 gem 'active_admin_importable'
+
+# Gema bootstrap (responsive)
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
