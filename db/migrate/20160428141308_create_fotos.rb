@@ -7,7 +7,6 @@ class CreateFotos < ActiveRecord::Migration
       t.boolean :visible
       t.boolean :presentacion
       t.references :galery, index: true, foreign_key: true
-      t.attachment :image
 
       t.timestamps null: false
     end
