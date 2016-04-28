@@ -1,3 +1,3 @@
 class Presentacion < ActiveRecord::Base
-  belongs_to :fotos
+  belongs_to :foto
 end
