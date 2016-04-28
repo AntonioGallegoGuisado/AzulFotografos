@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  descripcion: MyString
+  posicion: 1
+  visible: false
+  presentacion: false
+  galery_id: 
+
+two:
+  titulo: MyString
+  descripcion: MyString
+  posicion: 1
+  visible: false
+  presentacion: false
+  galery_id: 
