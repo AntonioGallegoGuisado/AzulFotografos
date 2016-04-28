@@ -7,6 +7,7 @@ one:
   visible: false
   presentacion: false
   galery_id: 
+  image: 
 
 two:
   titulo: MyString
@@ -15,3 +16,4 @@ two:
   visible: false
   presentacion: false
   galery_id: 
+  image: 
