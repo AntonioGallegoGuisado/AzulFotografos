@@ -14,4 +14,5 @@ ActiveAdmin.register Foto do
 # end
 
 
+
 end
