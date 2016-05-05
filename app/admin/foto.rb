@@ -18,6 +18,19 @@ permit_params :galery_id, :image, :titulo, :descripcion, :posicion, :visible
 
 active_admin_importable
 
+form partial: 'form'
+form :html => { :enctype => "multipart/form-data" } do |f|
+    f.input :image, :as => :file, :hint => f.template.image_tag(f.object.image.url(:med))
+    #selectable_column
+    f.input :galery_id
+    f.input :titulo
+    f.input :descripcion
+    f.input :posicion
+    f.input :visible
+    actions
+end
+
+
 index do
   selectable_column
   column :galery_id
