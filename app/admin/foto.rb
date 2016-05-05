@@ -13,7 +13,7 @@ ActiveAdmin.register Foto do
 #   permitted
 # end
 
-permit_params :galery_id, :image, :titulo, :descripcion, :posicion, :visible, :presentacion
+permit_params :galery_id, :image, :titulo, :descripcion, :posicion, :visible
 # si falla probar a quitar la FK :galery_id
 
 active_admin_importable
@@ -26,7 +26,6 @@ index do
   column :descripcion
   column :posicion
   column :visible
-  column :presentacion
   actions
 end
 

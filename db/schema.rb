@@ -59,7 +59,6 @@ ActiveRecord::Schema.define(version: 20160504161316) do
     t.string   "descripcion"
     t.integer  "posicion"
     t.boolean  "visible"
-    t.boolean  "presentacion"
     t.integer  "galery_id"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false

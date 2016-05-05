@@ -5,7 +5,6 @@ class CreateFotos < ActiveRecord::Migration
       t.string :descripcion
       t.integer :posicion
       t.boolean :visible
-      t.boolean :presentacion
       
       t.references :galery, index: true, foreign_key: true
 
