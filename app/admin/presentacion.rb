@@ -13,5 +13,15 @@ ActiveAdmin.register Presentacion do
 #   permitted
 # end
 
+permit_params :foto_id, :posicion
+
+active_admin_importable
+
+index do
+  selectable_column
+  column :foto_id
+  column :posicion
+  actions
+end
 
 end

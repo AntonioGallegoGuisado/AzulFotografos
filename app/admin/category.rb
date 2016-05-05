@@ -13,5 +13,16 @@ ActiveAdmin.register Category do
 #   permitted
 # end
 
+permit_params :titulo, :descripcion, :visible
+
+active_admin_importable
+
+index do
+  selectable_column
+  column :titulo
+  column :descripcion
+  column :visible
+  actions
+end
 
 end

@@ -13,5 +13,19 @@ ActiveAdmin.register Galery do
 #   permitted
 # end
 
+permit_params :category_id, :titulo, :descripcion, :posicion, :portada, :visible
+
+active_admin_importable
+
+index do
+  selectable_column
+  column :category_id
+  column :titulo
+  column :descripcion
+  column :posicion
+  column :portada
+  column :visible
+  actions
+end
 
 end

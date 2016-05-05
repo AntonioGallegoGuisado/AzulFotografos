@@ -86,11 +86,11 @@ ActiveRecord::Schema.define(version: 20160504161316) do
 
   create_table "presentacions", force: :cascade do |t|
     t.integer  "posicion"
-    t.integer  "fotos_id"
+    t.integer  "foto_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_index "presentacions", ["fotos_id"], name: "index_presentacions_on_fotos_id"
+  add_index "presentacions", ["foto_id"], name: "index_presentacions_on_foto_id"
 
 end
