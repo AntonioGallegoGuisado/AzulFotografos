@@ -22,7 +22,7 @@ form partial: 'form'
 form :html => { :enctype => "multipart/form-data" } do |f|
     f.input :image, :as => :file, :hint => f.template.image_tag(f.object.image.url(:med))
     #selectable_column
-    f.input :galery_id
+    f.input :galery_id, :label => 'Galeria', :as => :select, :collection => Galery.all.map{|u|[u.titulo,u.id]}
     f.input :titulo
     f.input :descripcion
     f.input :posicion
