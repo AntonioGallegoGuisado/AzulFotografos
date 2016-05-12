@@ -1,5 +1,5 @@
+<div class="container">
 <%for foto in @presentacion%>
-	<p>-----------------------------------------------------------------</p>
-	<%= image_tag foto.image.url(:large)%>
-	<br />
+	<%= image_tag foto.image.url(:med)%>
 <%end%>
+</div>
