@@ -1,0 +1,5 @@
+<%for foto in @presentacion%>
+	<p>-----------------------------------------------------------------</p>
+	<%= image_tag foto.image.url(:large)%>
+	<br />
+<%end%>
