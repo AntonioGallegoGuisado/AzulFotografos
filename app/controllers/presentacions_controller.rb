@@ -6,8 +6,7 @@ class PresentacionsController < ApplicationController
     for foto in presentacion
       imagen=fotos.find(foto.foto_id)
       @presentacion << imagen
-      #@presentacion << foto.Foto.image.url(:large).where(foto.Foto.id=foto.foto_id)
     end
-    
+    @portada=@presentacion.shift
   end
 end

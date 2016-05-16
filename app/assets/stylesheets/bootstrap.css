@@ -6757,4 +6757,7 @@ button.close {
     display: none !important;
   }
 }
+.carousel-inner img {
+  margin: auto;
+}
 /*# sourceMappingURL=bootstrap.css.map */
