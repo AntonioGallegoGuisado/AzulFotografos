@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   
   get '/categorias' => 'categories#index'
   get '/galerias' => 'galeries#index'
+  get '/galeria/:id'=> 'galeries#galeria'
   get '/foto/:id' => 'fotos#index'
   
   # The priority is based upon order of creation: first created -> highest priority.

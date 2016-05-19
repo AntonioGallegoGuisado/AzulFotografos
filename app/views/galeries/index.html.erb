@@ -1,8 +1,8 @@
-<br /><br /><br /><br />
+
 <div class="container">
 	<%for galeria in @galerias%>
 		<div class="container">
-			<h2><%=galeria[1]%></h2>
+			<h2><%=galeria[1]%></h2><p><%= link_to "Ver galeria", galeria[3]%></p>
 			<%for foto in galeria[0]%>
 				<%= image_tag foto.image.url(:med), :alt => foto.titulo%>
 			<%end%>

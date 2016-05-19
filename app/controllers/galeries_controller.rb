@@ -1,7 +1,5 @@
 class GaleriesController < ApplicationController
   
-  @@rutaGeneral="localhost:3000/"
-  
   def index
     
     @galerias=Array.new
@@ -15,6 +13,8 @@ class GaleriesController < ApplicationController
       descripcion=gal.descripcion
       #preparamos nuestro objeto galeria
       galeria=Array.new
+      rutaGaleria="galeria/#{gal.id}"
+      galeria << rutaGaleria
       #Obtenemos todas las fotos relacionadas con la galeria
       #filtramos por visibles las fotos
       #limitamos cantidad de fotos por galeria a 3
@@ -26,9 +26,15 @@ class GaleriesController < ApplicationController
       end
       #introducimos cada array galeria como un objeto independiente en la variable de la vista
       #introducimos tambien su titulo y descripcion
-      #TODO: enlazar cada galeria con la vista de cada galeria y hacer la vista
-      @galerias << [galeria,titulo,descripcion]
+      #enlazamos cada galeria con la vista de cada galeria
+      ruta=galeria.shift
+      @galerias << [galeria,titulo,descripcion,ruta]
     end
     
   end
+  
+  def galeria
+    
+  end
+  
 end
