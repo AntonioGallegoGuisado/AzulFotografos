@@ -4,7 +4,7 @@
 		<div class="container">
 			<h2><%=galeria[1]%></h2>
 			<%for foto in galeria[0]%>
-				<%= image_tag foto.image.url(:med)%>
+				<%= image_tag foto.image.url(:med), :alt => foto.titulo%>
 			<%end%>
 			<p><%=galeria[2]%></p>
 		</div>
