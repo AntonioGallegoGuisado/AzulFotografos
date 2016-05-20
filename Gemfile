@@ -17,8 +17,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 # Gema para redireccion dinamica AJAX-Javascript
-#por ahora no es necesaria
-#gem 'jquery-turbolinks'
+gem 'jquery-turbolinks'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
