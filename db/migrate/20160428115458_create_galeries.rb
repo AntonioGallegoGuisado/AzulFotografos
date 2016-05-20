@@ -4,7 +4,6 @@ class CreateGaleries < ActiveRecord::Migration
       t.string :titulo
       t.string :descripcion
       t.integer :posicion
-      t.integer :portada
       t.boolean :visible
       t.references :category, index: true, foreign_key: true
 

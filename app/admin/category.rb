@@ -13,15 +13,26 @@ ActiveAdmin.register Category do
 #   permitted
 # end
 
-permit_params :titulo, :descripcion, :visible
+permit_params :titulo, :descripcion, :visible, :image
 
 active_admin_importable
+
+form partial: 'form'
+form :html => { :enctype => "multipart/form-data" } do |f|
+    f.input :titulo
+    f.input :descripcion
+    f.input :posicion
+    f.input :visible
+    f.input :image, :as => :file, :hint => f.template.image_tag(f.object.image.url(:small))
+    actions
+end
 
 index do
   selectable_column
   column :titulo
   column :descripcion
   column :visible
+  column :image
   actions
 end
 

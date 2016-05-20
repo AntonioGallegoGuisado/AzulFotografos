@@ -13,7 +13,7 @@ ActiveAdmin.register Galery do
 #   permitted
 # end
 
-permit_params :category_id, :titulo, :descripcion, :posicion, :portada, :visible
+permit_params :category_id, :titulo, :descripcion, :posicion, :visible
 
 active_admin_importable
 
@@ -23,7 +23,6 @@ index do
   column :titulo
   column :descripcion
   column :posicion
-  column :portada
   column :visible
   actions
 end

@@ -15,11 +15,11 @@
 	  <div class="carousel-inner" role="listbox">
 	    
 	    <div class="center-block item active">
-	      <%= image_tag @portada.image.url(:large), :alt => @portada.titulo%>
+	      <%= image_tag @portada.image.url(:large), :alt => @portada.descripcion%>
 	    </div>
 		<%for foto in @presentacion%>
 		    <div class="center-block item">
-		      <%= image_tag foto.image.url(:large), :alt => foto.titulo%>
+		      <%= image_tag foto.image.url(:large), :alt => foto.descripcion%>
 		    </div>
 	    <%end%>
 	  </div>
