@@ -3,7 +3,7 @@ class GaleriesController < ApplicationController
   def index
     
     @galerias=Array.new
-    #Filtramos galerias por visibles
+    #Obtenemos las galerias ordenadas y las filtramos por visibles
     galerias=Galery.order('Galeries.posicion').where(:visible => true)
     
     #Por cada registro (llamado gal) en galerias:    
@@ -35,6 +35,30 @@ class GaleriesController < ApplicationController
   
   def galeria
     
+    id=params[:id]
+    @galeria=Array.new
+    galeria=Array.new
+    #consulta a base de datos
+    galerias=Galery.where(:id => id).where(:visible => true).all
+    #comprobamos que la galeria es visible
+    if galerias != nil
+      @galeria=Array.new
+      #obtenemos las fotos ordenadas de la galeria y las filtramos por visibles
+      fotos=Foto.order('Fotos.posicion').where(:galery_id => id).where(:visible => true).all
+      for gal in galerias
+        #obtenemos el titulo
+        titulo=gal.titulo
+        #obtenemos la descripcion
+        descripcion=gal.descripcion
+      end
+      #insertamos los datos
+      for foto in fotos
+        galeria << foto
+      end
+      @galeria= [galeria,titulo,descripcion]
+      
+      
+    end
   end
   
 end
