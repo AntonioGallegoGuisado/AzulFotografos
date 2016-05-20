@@ -56,9 +56,9 @@ class GaleriesController < ApplicationController
         galeria << foto
       end
       @galeria= [galeria,titulo,descripcion]
-      
-      
+        
     end
+    
   end
   
 end

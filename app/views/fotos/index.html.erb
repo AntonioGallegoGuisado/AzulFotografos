@@ -1,7 +1,7 @@
 <div class="container">
 	<%if @foto%>
 	<h2><%=@foto.titulo%></h2>
-	<%=image_tag @foto.image.url(:large)%>
+	<%=image_tag @foto.image.url(:large), :alt => @foto.titulo%>
 	<p><%=@foto.descripcion%></p>
 	<%end%>
 </div>
