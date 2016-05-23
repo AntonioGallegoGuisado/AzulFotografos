@@ -19,7 +19,7 @@ class GaleriesController < ApplicationController
           descripcion=gal.descripcion
           #preparamos nuestro objeto galeria
           galeria=Array.new
-          rutaGaleria="galeria/#{gal.id}"
+          rutaGaleria="/galeria/#{gal.id}"
           galeria << rutaGaleria
           #Obtenemos todas las fotos relacionadas con la galeria
           #filtramos por visibles las fotos
