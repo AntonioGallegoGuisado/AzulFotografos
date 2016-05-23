@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   
   get '/categorias' => 'categories#index'
   get '/galerias' => 'galeries#index'
+  get '/galerias/:id' => 'galeries#index'
   get '/galeria/:id'=> 'galeries#galeria'
   get '/galeria/foto/:id' => 'fotos#index'
   

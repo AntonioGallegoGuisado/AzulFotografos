@@ -13,7 +13,7 @@ ActiveAdmin.register Category do
 #   permitted
 # end
 
-permit_params :titulo, :descripcion, :visible, :image
+permit_params :titulo, :descripcion, :posicion, :visible, :image
 
 active_admin_importable
 
