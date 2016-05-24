@@ -25,11 +25,11 @@ class GaleriesController < ApplicationController
           #filtramos por visibles las fotos
           #limitamos cantidad de fotos por galeria a 3
           fotos=Foto.order('Fotos.posicion').where(:galery_id => gal.id).where(:visible => true).limit(3)
-          for foto in fotos
-            #introducimos cada foto como un objeto independiente en un array galeria
-            galeria << foto
-            
-          end
+            for foto in fotos
+              #introducimos cada foto como un objeto independiente en un array galeria
+              galeria << foto
+              
+            end
           #introducimos cada array galeria como un objeto independiente en la variable de la vista
           #introducimos tambien su titulo y descripcion
           #enlazamos cada galeria con la vista de cada galeria
@@ -54,11 +54,11 @@ class GaleriesController < ApplicationController
           #filtramos por visibles las fotos
           #limitamos cantidad de fotos por galeria a 3
           fotos=Foto.order('Fotos.posicion').where(:galery_id => gal.id).where(:visible => true).limit(3)
-          for foto in fotos
-            #introducimos cada foto como un objeto independiente en un array galeria
-            galeria << foto
-            
-          end
+            for foto in fotos
+              #introducimos cada foto como un objeto independiente en un array galeria
+              galeria << foto
+              
+            end
           #introducimos cada array galeria como un objeto independiente en la variable de la vista
           #introducimos tambien su titulo y descripcion
           #enlazamos cada galeria con la vista de cada galeria
@@ -72,6 +72,7 @@ class GaleriesController < ApplicationController
   def galeria
     
     id=params[:id]
+    @id=id
     @galeria=Array.new
     galeria=Array.new
     #consulta a base de datos
@@ -88,13 +89,28 @@ class GaleriesController < ApplicationController
         descripcion=gal.descripcion
       end
       #insertamos los datos
-      for foto in fotos
-        galeria << foto
-      end
+        for foto in fotos
+          galeria << foto
+        end
       @galeria= [galeria,titulo,descripcion]
         
     end
     
+  end
+  
+  def presentacion
+    #TODO: solucionar error .imagen for nil y filtrar por galerias visibles
+    id=params[:id]
+    @presentacion=Array.new
+    @portada=nil
+    if galeria != nil
+        fotos=Foto.order('Fotos.posicion').where(:galery_id => id).where(:visible => true).all
+        for foto in fotos
+          imagen=foto
+          @presentacion << imagen
+        end
+        @portada=@presentacion.shift
+     end
   end
   
 end
