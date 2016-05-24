@@ -2,8 +2,10 @@
 	<%if @categorias%>
 		<%for categoria in @categorias%>
 			<div class="categoria">
+				<a href="/galerias/<%=categoria.id%>">
 				<%= image_tag categoria.image.url(:med), :alt => categoria.descripcion, :class => "img-categoria"%>
 				<div class="txt-categoria"><span><%=categoria.titulo%></span></div>
+				</a>
 			</div>
 		<%end%>
 	<%end%>
