@@ -2,7 +2,7 @@
 <div class="container">
 	<%if @galeria%>
 		<div class="container">
-			<h2><%=@galeria[1]%></h2>
+			<h2><%=@galeria[1]%></h2><p><a href="/galeria/presentacion/<%=@id%>">Ver presentación</a></p>
 			<%for foto in @galeria[0]%>
 				<a href="foto/<%=foto.id%>"><%= image_tag foto.image.url(:med), :alt => foto.descripcion%></a>
 			<%end%>
