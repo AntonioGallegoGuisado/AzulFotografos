@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="slide-presentacion">
+	<div class="slide-presentacion-grande">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
 		  <!--
@@ -15,21 +15,21 @@
 		  <div class="carousel-inner" role="listbox">
 		    
 		    <div class="center-block item active">
-		      <%= image_tag @portada.image.url(:large), :alt => @portada.descripcion%>
+		      <%= image_tag @portada.image.url(:large), :alt => @portada.descripcion, :class => "img-presentacion-grande", :style => "max-height:500px; height:auto;"%>
 		    </div>
 			<%for foto in @presentacion%>
 			    <div class="center-block item">
-			      <%= image_tag foto.image.url(:large), :alt => foto.descripcion%>
+			      <%= image_tag foto.image.url(:large), :alt => foto.descripcion, :class => "img-presentacion-grande", :style => "max-height:500px; height:auto;"%>
 			    </div>
 		    <%end%>
 		  </div>
 		
 		  <!-- Left and right controls -->
-		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="height:500px;">
 		    <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
 		    <span class="sr-only">Previous</span>
 		  </a>
-		  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"style="height:500px;">
 		    <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
 		    <span class="sr-only">Next</span>
 		  </a>
