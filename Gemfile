@@ -20,7 +20,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'jquery-turbolinks'
 
 # Gema para la paginacion
-gem 'will_paginate'
+gem 'will_paginate', '~> 3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
