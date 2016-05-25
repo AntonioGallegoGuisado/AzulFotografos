@@ -92,7 +92,7 @@ class GaleriesController < ApplicationController
         for foto in fotos
           galeria << foto
         end
-      galeria=galeria.paginate(:page => params[:page], :per_page => 15)
+      galeria=galeria.paginate(:page => params[:page], :per_page => 10)
       @galeria= [galeria,titulo,descripcion]
         
     end  
