@@ -66,7 +66,7 @@ class GaleriesController < ApplicationController
           @galerias << [galeria,titulo,descripcion,ruta]
       end
     end
-    
+  @galerias=@galerias.paginate(:page => params[:page], :per_page => 1)  
   end
   
   def galeria
@@ -95,7 +95,7 @@ class GaleriesController < ApplicationController
       @galeria= [galeria,titulo,descripcion]
         
     end
-    
+  @galeria=@galeria.paginate(:page => params[:page], :per_page => 1)  
   end
   
   def presentacion
