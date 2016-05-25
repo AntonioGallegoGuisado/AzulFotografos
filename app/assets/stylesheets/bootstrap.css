@@ -6767,7 +6767,7 @@ button.close {
 	margin: right;	
 	width: auto;
 	float: left;
-	margin-left: 10px;
+	padding: 10px;
 }
 
 .img-categoria{
@@ -6794,6 +6794,10 @@ button.close {
 
 .slide-presentacion{
 	width: 600px;
+}
+
+.img-galeria{
+	padding: 10px;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
