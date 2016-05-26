@@ -6770,6 +6770,10 @@ button.close {
 	margin: right;	
 	width: auto;
 	float: left;
+}
+
+.sep-categoria{
+	float: left;
 	padding: 10px;
 }
 
