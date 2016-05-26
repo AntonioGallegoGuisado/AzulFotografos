@@ -6794,7 +6794,6 @@ button.close {
 	font: bold 24px/45px Helvetica, Sans-Serif;
 	background: rgb(0, 0, 0);
 	background: rgba(255, 255, 255, 0.5);
-	padding: 10px;
 	width: 100%;
 	text-align: center;
 }
