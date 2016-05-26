@@ -6759,6 +6759,8 @@ button.close {
   }
 }
 
+/*# sourceMappingURL=bootstrap.css.map */
+
 .carousel-inner img {
   margin: auto;
 }
@@ -6810,4 +6812,15 @@ button.close {
 	padding: 10px;
 }
 
-/*# sourceMappingURL=bootstrap.css.map */
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-size: 14px;
+  	line-height: 1.42857143;
+  	color: #888888 !important;
+  	background-color: #060606 !important;
+}
+
+a {
+  color: #2a9fd6 !important;
+  text-decoration: none;
+}
