@@ -6788,7 +6788,7 @@ button.close {
 	width: 100%;
 	margin-top: 200px;
 }
-.txt-categoria span{
+.txt-categoria  span{
 	position: absolute;
 	color: black;
 	font: bold 24px/45px Helvetica, Sans-Serif;
@@ -6796,6 +6796,7 @@ button.close {
 	background: rgba(255, 255, 255, 0.5);
 	width: 100%;
 	text-align: center;
+	font-size: 24px !important
 }
 
 .slide-presentacion{
@@ -6999,4 +7000,13 @@ p {
 
 span {
 	font-size: 15px !important;
+}
+
+.txt-presentacion ´{
+	padding: 10px;
+}
+
+.footer {
+	text-align: right;
+	margin-right: 10px;
 }
