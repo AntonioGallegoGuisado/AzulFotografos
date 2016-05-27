@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   get '/galerias/:id' => 'galeries#index'
   get '/galeria/:id'=> 'galeries#galeria'
   get '/galeria/foto/:id' => 'fotos#index'
-  get '/galeria/presentacion/:id' =>'galeries#presentacion'
+  get '/galeria/presentacion/:id' => 'galeries#presentacion'
+  get '/contacto' => 'contacto#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

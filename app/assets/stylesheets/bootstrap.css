@@ -6984,3 +6984,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 	width: 400px;
 	margin: 0 auto;
 }
+
+.contacto {
+	padding: 10px;
+}
+
+.contacto h2{
+	color: #2a9fd6 !important;
+}
