@@ -6992,3 +6992,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .contacto h2{
 	color: #2a9fd6 !important;
 }
+
+p {
+	font-size: 15px !important;
+}
+
+span {
+	font-size: 15px !important;
+}
