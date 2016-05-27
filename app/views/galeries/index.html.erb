@@ -10,7 +10,12 @@
 		</div>
 		<br />
 	<%end%>
+
+	<div class="pagination-centered">
+		<%= will_paginate @galerias, :renderer => BootstrapPagination::Rails %>
+	</div>
+
 </div>
-<div class="container">
-	<%= will_paginate @galerias, :renderer => BootstrapPagination::Rails %>
-</div>
+
+
+
