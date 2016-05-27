@@ -9,7 +9,7 @@
 	function mousehandler(e){
 	var myevent = (isNS) ? e : event;
 	var eventbutton = (isNS) ? myevent.which : myevent.button;
-	if((eventbutton==2)||(eventbutton==3)) return false;
+	if(eventbutton==2) return false;
 	}
 	document.oncontextmenu = mischandler;
 	document.onmousedown = mousehandler;
