@@ -6792,7 +6792,7 @@ button.close {
 	position: absolute;
 	color: black;
 	font: bold 24px/45px Helvetica, Sans-Serif;
-	background: rgb(0, 0, 0);
+	background: rgb(255, 255, 255);
 	background: rgba(255, 255, 255, 0.5);
 	width: 100%;
 	text-align: center;
