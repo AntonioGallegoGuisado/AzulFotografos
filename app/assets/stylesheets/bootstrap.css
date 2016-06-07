@@ -7089,3 +7089,11 @@ span {
     display: -ms-flexbox;
     -ms-flex-flow: row wrap;
 }
+
+.pure-paginator li {
+	height: 35px !important;
+}
+
+.pure-button {
+	height: 35px !important;
+}
