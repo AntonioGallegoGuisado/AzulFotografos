@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
+  Blogo::Routes.mount_to(self, at: '/blog')
+  
   root to: 'presentacions#index'
   
   get '/categorias' => 'categories#index'
