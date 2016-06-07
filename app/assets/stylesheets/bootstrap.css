@@ -6826,7 +6826,7 @@ body {
 
 a {
   color: #2a9fd6 !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .navbar-default {
