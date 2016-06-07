@@ -7097,3 +7097,11 @@ span {
 .pure-button {
 	height: 35px !important;
 }
+
+.posted {
+	color:#444444 !important;
+}
+
+.blogo-article p{
+	color:#888888 !important;
+}

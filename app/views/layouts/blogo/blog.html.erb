@@ -9,7 +9,7 @@
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag "blogo/blog" %>
   <%= stylesheet_link_tag "bootstrap.css" %>
-  
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= auto_discovery_link_tag :atom, blogo_feed_path %>
   <%= render 'blogo/shared/google_analytics' %>
 </head>
