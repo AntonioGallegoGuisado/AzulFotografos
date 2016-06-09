@@ -8,5 +8,12 @@ class PresentacionsController < ApplicationController
       @presentacion << imagen
     end
     @portada=@presentacion.shift
+    
+    #Parrafo de introducción editable
+    
+    @intro=Intro.first.introduccion
+    
+    #TODO: modulo novedades flotante a la derecha / abajo si no cabe, con texto y enlace a la novedad
+    
   end
 end
