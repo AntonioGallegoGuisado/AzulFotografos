@@ -14,8 +14,8 @@ class PresentacionsController < ApplicationController
     @intro=Intro.first.introduccion
     
     #Modulo novedades flotante a la derecha / abajo si no cabe, con texto y enlace a la novedad
-    #seleccionar las ultimas novedades (limite 3)
-    @novedades=Novedad.last(3)
-    
+    #seleccionar las ultimas novedades (limite 5)
+    @novedades=Novedad.last(5)
+    @novedades=@novedades.reverse
   end
 end
