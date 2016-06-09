@@ -1,4 +1,5 @@
 <div class="container">
+<div class="presentacion">
 	<div class="slide-presentacion">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
@@ -35,10 +36,28 @@
 		  </a>
 		</div>
 	</div>
-	<br /><br />
 	
 	<div class="txt-presentacion">
-		<%=@intro%>
+		<%if @intro%>
+			<%=@intro%>
+		<%end%>
 	</div>
 	
+</div>
+
+	<div class="aside novedades">
+		<h3>Novedades</h3>
+		
+		<%for novedad in @novedades%>
+			<%if novedad%>
+				<hr />
+				<span><%=novedad.texto%></span>
+				<%if novedad.enlace%>
+					<br />
+					<a href="<%=novedad.url%>"><%=novedad.enlace%></a>
+				<%end%>
+			<%end%>
+		<%end%>	
+	</div>
+
 </div>
