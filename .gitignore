@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignorar el contenido de la carpeta public
+/public/*
