@@ -6770,6 +6770,7 @@ button.close {
 	margin: right;	
 	width: auto;
 	float: left;
+	margin-top: 10px;
 }
 
 .sep-categoria{
