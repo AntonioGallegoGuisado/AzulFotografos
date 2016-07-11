@@ -6770,7 +6770,7 @@ button.close {
 	margin: right;	
 	width: auto;
 	float: left;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .sep-categoria{
@@ -6787,7 +6787,7 @@ button.close {
 	top 50px;
 	left 0px;
 	width: 100%;
-	margin-top: 200px;
+	margin-top: 150px;
 }
 .txt-categoria  span{
 	position: absolute;
