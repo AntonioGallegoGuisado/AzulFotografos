@@ -100,11 +100,11 @@ class GaleriesController < ApplicationController
   
   def presentacion
     #TODO: solucionar error .imagen for nil y filtrar por galerias visibles
-    id=params[:id]
+    @id=params[:id]
     @presentacion=Array.new
     @portada=nil
     if galeria != nil
-        fotos=Foto.order('Fotos.posicion').where(:galery_id => id).where(:visible => true).all
+        fotos=Foto.order('Fotos.posicion').where(:galery_id => @id).where(:visible => true).all
         for foto in fotos
           imagen=foto
           @presentacion << imagen

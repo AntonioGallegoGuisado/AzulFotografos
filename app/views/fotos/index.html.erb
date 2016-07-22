@@ -1,7 +1,7 @@
 <div class="container">
 	<%if @foto%>
 		<%if @foto.galery_id%>
-			<p><a href="/galeria/<%=@idGal%>">Volver a la galeria</a> | <a href="/galeria/foto/<%=@prevID%>">Anterior</a> | <a href="/galeria/foto/<%=@nextID%>">Siguiente</a> | <a href="/galeria/presentacion/<%=@idGal%>">Ver presentación</a></p>
+			<div><p><a href="/galeria/<%=@idGal%>">Volver a la galería</a> | <a href="/galeria/foto/<%=@prevID%>">Anterior</a> | <a href="/galeria/foto/<%=@nextID%>">Siguiente</a> | <a href="/galeria/presentacion/<%=@idGal%>">Ver presentación</a></p></div>
 		<%end%>
 		<h2><%=@foto.titulo%></h2>
 		<%=image_tag @foto.image.url(:extralarge), :alt => @foto.descripcion%>
