@@ -79,30 +79,37 @@ class GaleriesController < ApplicationController
     galerias=Galery.where(:id => id).where(:visible => true).all
     #comprobamos que la galeria es visible
     if galerias != nil
-      @galeria=Array.new
-      #obtenemos las fotos ordenadas de la galeria y las filtramos por visibles
-      fotos=Foto.order('Fotos.posicion').where(:galery_id => id).where(:visible => true).all
-      for gal in galerias
-        #obtenemos el titulo
-        titulo=gal.titulo
-        #obtenemos la descripcion
-        descripcion=gal.descripcion
-      end
-      #insertamos los datos
-        for foto in fotos
-          galeria << foto
+        @galeria=Array.new
+        #obtenemos las fotos ordenadas de la galeria y las filtramos por visibles
+        fotos=Foto.order('Fotos.posicion').where(:galery_id => id).where(:visible => true).all
+        for gal in galerias
+          #obtenemos el titulo
+          titulo=gal.titulo
+          #obtenemos la descripcion
+          descripcion=gal.descripcion
+          #comprobamos que la galeria es visible
+          visible=gal.visible
+          @visible=false
+          if visible==true
+            @visible=true
+          end
         end
-      galeria=galeria.paginate(:page => params[:page], :per_page => 10)
-      @galeria= [galeria,titulo,descripcion]
-        
+        #insertamos los datos
+          for foto in fotos
+            galeria << foto
+          end
+        galeria=galeria.paginate(:page => params[:page], :per_page => 10)
+        @galeria= [galeria,titulo,descripcion]
+          
     end  
   end
   
   def presentacion
-    #TODO: solucionar error .imagen for nil y filtrar por galerias visibles
+    #TODO: solucionar error .imagen for nil
     @id=params[:id]
     @presentacion=Array.new
     @portada=nil
+    #TODO: comprobar si existe una galeria con la ID recibida
     if galeria != nil
         fotos=Foto.order('Fotos.posicion').where(:galery_id => @id).where(:visible => true).all
         for foto in fotos
