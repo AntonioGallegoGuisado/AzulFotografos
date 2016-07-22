@@ -17,6 +17,7 @@ class FotosController < ApplicationController
         #obtener colección de fotos que pertenecen a la galeria
         #obtener id galeria
         idGal=foto.galery_id
+        @idGal=idGal
         #filtrar fotos por id galeria y ordenar por posicion
         galeria=fotos.order('fotos.posicion').where(:galery_id => idGal).where(:visible => true).all
         #obtener array de IDs de la galeria a la que pertenece la foto ignorando las fotos ocultas
@@ -54,7 +55,6 @@ class FotosController < ApplicationController
         else
           @prevID=idsFotos[anterior]
         end
-        puts "nextID = #{@nextID}, prevID = #{@prevID}"
       end
     end
   end
