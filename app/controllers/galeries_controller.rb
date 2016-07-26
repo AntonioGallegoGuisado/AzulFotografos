@@ -105,11 +105,15 @@ class GaleriesController < ApplicationController
   end
   
   def presentacion
-    #TODO: solucionar error .imagen for nil
     @id=params[:id]
     @presentacion=Array.new
     @portada=nil
-    #TODO: comprobar si existe una galeria con la ID recibida
+    
+    #comprobar si existe una galeria con la ID recibida
+    if Galery.where(:id => @id).exists?
+      @existe=true
+    end
+    
     if galeria != nil
         fotos=Foto.order('Fotos.posicion').where(:galery_id => @id).where(:visible => true).all
         for foto in fotos
