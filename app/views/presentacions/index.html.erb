@@ -7,6 +7,7 @@
 <br /><br />
 	
 <div class="presentacion">
+	<%if @presentacion%>
 	<div class="slide-presentacion">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
@@ -43,6 +44,7 @@
 		  </a>
 		</div>
 	</div>
+	<%end%>
 	
 	<div class="txt-presentacion">
 		<%if @intro%>
