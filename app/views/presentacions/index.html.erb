@@ -56,14 +56,14 @@
 
 	<div class="aside novedades">
 		<h3>Novedades</h3>
-		
+		<hr />
 		<%for novedad in @novedades%>
 			<%if novedad%>
-				<hr />
 				<span><%=novedad.texto%></span>
 				<%if novedad.enlace%>
 					<br />
 					<a href="<%=novedad.url%>"><%=novedad.enlace%></a>
+					<hr />
 				<%end%>
 			<%end%>
 		<%end%>	
