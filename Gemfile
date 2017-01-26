@@ -25,6 +25,7 @@ gem 'will_paginate', '~> 3.1'
 
 # Gema para el blog
 gem 'blogo', '~> 0.1.1'
+gem 'ckeditor'
 
 # Gema para el servidor de aplicaciones
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   
   Blogo::Routes.mount_to(self, at: '/blog')
+  mount Ckeditor::Engine => '/ckeditor'
   
   root to: 'presentacions#index'
   
