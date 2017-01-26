@@ -1,5 +1,6 @@
 <div class="container">
 	<%if @existe==true%>
+		<div><p><a href="/galeria/<%=@id%>">Volver a la galería</a></p></div>
 		<div class="slide-presentacion-grande">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
@@ -37,6 +38,6 @@
 			</div>
 		</div>
 		
-		<div><p><a href="/galeria/<%=@id%>">Volver a la galería</a></p></div>
+		
 	<%end%>
 </div>
