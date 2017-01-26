@@ -2,6 +2,9 @@
 	
 	if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
 	
+	document.ondragstart= function(){return false};
+	document.onselectstart= function(){return false};
+	
 	function mischandler(){
 	return false;
 	}
