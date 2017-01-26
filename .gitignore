@@ -17,7 +17,7 @@
 /tmp
 
 # Ignorar el contenido de la carpeta public
-/public/*
+
 
 # Ignorar el archivo secrets
 /config/secrets.yml
