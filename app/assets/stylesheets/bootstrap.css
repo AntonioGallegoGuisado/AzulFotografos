@@ -6784,7 +6784,7 @@ button.close {
 
 .txt-categoria{
 	position: absolute;
-	top: 50px;
+	top: 0px;
 	left: 0px;
 	width: 100%;
 	margin-top: 150px;
