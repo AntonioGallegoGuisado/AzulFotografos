@@ -110,6 +110,7 @@ class GaleriesController < ApplicationController
     @portada=nil
     
     #comprobar si existe una galeria con la ID recibida
+    @existe=false
     if Galery.where(:id => @id).exists?
       @existe=true
     end
@@ -121,6 +122,9 @@ class GaleriesController < ApplicationController
           @presentacion << imagen
         end
         @portada=@presentacion.shift
+        if @portada==nil
+          @existe=false
+        end
      end
   end
   
