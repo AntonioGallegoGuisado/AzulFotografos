@@ -52,7 +52,7 @@ en:
       post_status_draft: 'draft'
       post_status_published: 'Publicado'
       post_title: 'Título de la entrada'
-      post_updated: 'Entrada actualizasa'
+      post_updated: 'Entrada actualizada'
       posts: 'Entradas'
       preview_post_button: 'Vista previa'
       preview_press_esc: 'Vista previa. Presiona ESC para salir.'

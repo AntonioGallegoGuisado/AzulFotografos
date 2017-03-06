@@ -9,7 +9,7 @@
    }
 	else if(event.ctrlKey && event.shiftKey && event.keyCode==73){        
       return false;  //Prevent from ctrl+shift+i
-   }
+ }
 });
 	
 	document.ondragstart= function(){return false};
